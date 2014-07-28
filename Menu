@@ -1,19 +1,57 @@
-<css>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5, CSS3 and jQuery Navigation menu</title>
+        <link rel="stylesheet" href="css/nav.css">
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body class="no-js">
+        <nav id="topNav">
+                <ul>
+                    <li><a href="#" title="http://2014.igem.org/Team:UT-Dallas">Home</a></li>
+                <li>
+                    <a href="http://2014.igem.org/Team:UT-Dallas/Notebook" title="Notebook">Notebook</a>
+                    <ul>  
+                        <li><a href="http://2014.igem.org/Team:UT-Dallas/Notebook/6" title="June 2014">June 2014</a></li>
+                        <li><a href="http://2014.igem.org/Team:UT-Dallas/Notebook/7" title="July 2014">July 2014</a></li>
+                        <li><a href="http://2014.igem.org/Team:UT-Dallas/Notebook/8" title="August 2014">August 2014</a></li>
+                        <li class="last"><a href="http://2014.igem.org/Team:UT-Dallas/Notebook/9" title="September 2014">Spetember 2014</a></li>
+                    </ul>                
+                </li>
+                <li><a href="http://2014.igem.org/Team:UT-Dallas/team" title="Team">Team</a></li>
+                <li><a href="http://igem.org/Team.cgi?year=2014" title="Team profile">Official Team Profile</a></li>
+                <li><a href="http://2014.igem.org/Team:UT-Dallas/project" title="Project">Project</a></li>
+ <li><a href="http://2014.igem.org/Team:UT-Dallas/human-practices" title="Human Practices">Human Practices</a></li>
+<ul>  
+                        <li><a href="http://2014.igem.org/Team:UT-Dallas/Human-practices/kidsU" title="Kids U">Kids U Cell-Ebration</a></li>
+                        <li><a href="http://2014.igem.org/Team:UT-Dallas/Human-practices" title="Outreach 2">Outreach 2</a></li>
+                        <li><a href="http://2014.igem.org/Team:UT-Dallas/Human-practices" title="Outreach 3">Outreach 3</a></li>
+                        <li class="last"><a href="http://2014.igem.org/Team:UT-Dallas/Human-practices" title="Outreach 4">Outreach 4</a></li>
 
-.nav ul ul{
-display:none;
-}
-
-.nav ul li:hover>ul{
-display:block;
-}
-
-.nav ul {
-  
-  padding: 0 20px;
-  border radius: 10 px;
-  list style: none;
-  position: relative;
-  background: linear-gradient (top, #FC7412 5%, #FC8F12 100%);
-  
+            </ul>
+        </nav>
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+        
+        /* JS disabled styles */
+.no-js nav li:hover ul { display:block; }
+ 
+/* base nav styles */
+nav { display:block; margin:0 auto 20px; border:1px solid #222; position:relative; background-color:#6a6a6a; font:16px Tahoma, Sans-serif; }
+nav ul { padding:0; margin:0; }
+nav li { position:relative; float:left; list-style-type:none; }
+nav ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+nav li a { display:block; padding:10px 20px; border-left:1px solid #999; border-right:1px solid #222; color:#eee; text-decoration:none; }
+nav li a:focus { outline:none; text-decoration:underline; }
+nav li:first-child a { border-left:none; }
+nav li.last a { border-right:none; }
+nav a span { display:block; float:right; margin-left:5px; }
+nav ul ul { display:none; width:100%; position:absolute; left:0; background:#6a6a6a; }
+nav ul ul li { float:none; }
+nav ul ul a { padding:5px 10px; border-left:none; border-right:none; font-size:14px; }
+nav ul ul a:hover { background-color:#555; }
+    </body>
+</html>

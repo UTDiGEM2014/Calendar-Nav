@@ -1,0 +1,19 @@
+<css>
+<body>
+
+.nav ul ul{
+display:none;
+}
+
+.nav ul li:hover>ul{
+display:block;
+}
+
+.nav ul {
+  
+  padding: 0 20px;
+  border radius: 10 px;
+  list style: none;
+  position: relative;
+  background: linear-gradient (top, #FC7412 5%, #FC8F12 100%);
+  
